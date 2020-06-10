@@ -1,6 +1,9 @@
 This document will be my brain! 
 Any issues I find, I will place here along with the workaround.
 
+Push to remote use:
+"git push -u (upstream) remote_name branch_name"
+
 Resetting to previous commit locally, must use --force or -f to push to remote to revert changes:
 "git push origin master -f"
 
