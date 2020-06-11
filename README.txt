@@ -1,8 +1,12 @@
 This document will be my brain! 
 Any issues I find, I will place here along with the workaround.
 
-To set an origin url use:
+To create a link to remote repo, use:
+"git remote add <remote_name>"
+To set a new remote url use:
 "git remote set-url add <remote_name> <new_url>
+To remove a remote url, use:
+"git remote set-url --delete <remote_name> <old_url> 
 
 Push to remote use:
 "git push -u (upstream) <remote_name> <branch_name>"
