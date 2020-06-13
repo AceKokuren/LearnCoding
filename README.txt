@@ -30,3 +30,8 @@ To delete Local Branch, ensure branch isn't checkoed out, then use:
 "git branch -d <branch_name>" or "git branch -D <branch_name>" to force delete regardless of merge status.
 To delete remote branch use:
 "git push <remote_name> --delete <branch_name>"
+
+Add <ctime> library to create random seed generator with <srand(time(NULL))
+To get a random output, use:
+"std::rand()"
+add a % aand number depending on how many options there are to choose from
