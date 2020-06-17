@@ -2,7 +2,7 @@ This document will be my brain!
 Any issues I find, I will place here along with the workaround.
 
 To create a new file use:
-"touch <file_name>
+"touch <file_name> <url>
 
 To create a link to remote repo, use:
 "git remote add <remote_name>"
