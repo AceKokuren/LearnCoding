@@ -2,10 +2,10 @@ This document will be my brain!
 Any issues I find, I will place here along with the workaround.
 
 To create a new file use:
-"touch <file_name> <url>
+"touch <file_name> 
 
 To create a link to remote repo, use:
-"git remote add <remote_name>"
+"git remote add <remote_name> <url>"
 To set a new remote url use:
 "git remote set-url add <remote_name> <new_url>
 To remove a remote url, use:
