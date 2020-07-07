@@ -23,3 +23,8 @@ Add <ctime> library to create random seed generator with <srand(time(NULL))
 To get a random output, use:
 "std::rand()"
 add a % aand number depending on how many options there are to choose from
+
+Declare a vector:
+Use library vector:
+#include <vector>
+std::vector <data_type> <<vector_name>> = {<stored_values>}
