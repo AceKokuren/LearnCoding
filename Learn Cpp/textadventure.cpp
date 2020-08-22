@@ -25,14 +25,14 @@ int main() {
 
   switch (answer) {
     case 1:
-    std::cout << "Excellent! Here is the message, make haste " << name << "!\n";
+    std::cout << "'Excellent! Here is the message, make haste " << name << "!'\n";
     break;
     case 2:
-    std::cout << "How unfortunate, please leave us!\n";
+    std::cout << "'How unfortunate, please leave us!'\n";
     std::cout << "You return home\n THE END!";
     return 0;
     case 3:
-    std::cout << "You will be rewarded with 100 Gold pieces, and will always be welcome in my court!\n";
+    std::cout << "'You will be rewarded with 100 Gold pieces, and will always be welcome in my court!'\n";
     std::cout << "Do you accept?\n\n";
     std::cout << "Y/N";
     std::string yn;
@@ -42,7 +42,7 @@ int main() {
       std::cin >> yn;      
     }
     if (yn == "Y") {
-      std::cout << "Excelltent! Here is the message, make haste " << name;
+      std::cout << "'Excelltent! Here is the message, make haste " << name << "!'\n";
     }
     else if (yn == "N") {
       std::cout << "You return home\n THE END!\n";
