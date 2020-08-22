@@ -1,4 +1,5 @@
 #include <iostream>
+#include <conio.h>
 
 int main() {
 
@@ -58,9 +59,9 @@ int main() {
   
   std::string fork;
   std::cin >> fork;
-  int tries = 1;
+  //int tries = 1;
 
-  while (fork != "right" && fork != "left" && fork != "Right" && fork != "Left" && tries < 5) {
+  /*while (fork != "right" && fork != "left" && fork != "Right" && fork != "Left" && tries < 5) {
     std::cout << "\nPlease enter left or right only\n";
     std::cin >> fork;
 	tries ++;
@@ -70,5 +71,24 @@ int main() {
   }
   else if (fork == "Right" || fork == "right") {
     std::cout << "You go right, down the forest path!\n";
+  }*/
+
+  for (int i  = 0; i < 5; i++) {
+    if (fork == "Left" || fork == "left") {
+    std::cout << "You start heading down the main road!\n";
+    std::cout << "You come across an overturned cart!\n";
+    getch();
+    std::cout << "Do you Help or Move passed?\n";
+    break;
   }
+   else if (fork == "Right" || fork == "right") {
+    std::cout << "You go right, down the forest path!\n";
+    break;
+  }
+  else {
+    std::cout << "Please enter Left or Right only!\n";
+    std::cin >> fork;
+    continue; 
+  }
+ }
 }
