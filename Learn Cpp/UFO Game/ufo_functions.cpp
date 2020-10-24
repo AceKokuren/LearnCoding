@@ -11,6 +11,15 @@ void greet() {
    std::cout << "in the codeword!" << std::endl;  
 }
 
+void end_game(std::string codeword, std::string answer) {
+   if (answer == codeword) {
+        std::cout << "Congratulations, you saved the day!\nVictory!!\n";
+   }
+   else {
+       std::cout << "Game Over!" << std::endl; 
+   }
+}
+
 void display_misses(int misses) {
 
   if (misses == 0 || misses == 1) {
