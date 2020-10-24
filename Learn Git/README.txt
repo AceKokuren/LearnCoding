@@ -1,6 +1,9 @@
 This document will be my brain! 
 Any issues I find, I will place here along with the workaround.
 
+To create a local repo use:
+"git init"
+
 To create a new file use:
 "touch <file_name> 
 
