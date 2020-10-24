@@ -12,18 +12,31 @@ void greet() {
 }
 
 void end_game(std::string codeword, std::string answer) {
-   if (answer == codeword) {
-        std::cout << "Congratulations, you saved the day!\nVictory!!\n";
-   }
-   else {
-       std::cout << "Game Over!" << std::endl; 
-   }
+  if (answer == codeword) {
+    std::cout << "\nCongratulations, you saved the day! Victory!!\n";
+  }
+  else {
+    std::cout << "\nGame Over!\n" << std::endl; 
+  }
+}
+void display_status(std::vector<char> incorrect, std::string answer) {
+
+  for (int i = 0; i < incorrect.size(); i++) {
+    std::cout << incorrect[i] << " ";
+  }
+  std::cout << "Codeword: ";
+
+  for (int j = 0; j < answer.length(); j++) {
+    std::cout << answer[j] << " ";
+  }
+  std::cout << "\n";
 }
 
 void display_misses(int misses) {
 
   if (misses == 0 || misses == 1) {
 
+    std::cout << "\n";
     std::cout << "                 .                            \n";
     std::cout << "                 |                            \n";
     std::cout << "              .-\"^\"-.                       \n";
@@ -41,6 +54,7 @@ void display_misses(int misses) {
   }
   else if (misses == 2) {
 
+    std::cout << "\n";
     std::cout << "                 .                            \n";
     std::cout << "                 |                            \n";
     std::cout << "              .-\"^\"-.                       \n";
@@ -58,6 +72,7 @@ void display_misses(int misses) {
   }
   else if (misses == 3) {
 
+    std::cout << "\n";
     std::cout << "                 .                            \n";
     std::cout << "                 |                            \n";
     std::cout << "              .-\"^\"-.                       \n";
@@ -75,6 +90,7 @@ void display_misses(int misses) {
   }  
   else if (misses == 4) {
 
+    std::cout << "\n";
     std::cout << "                 .                            \n";
     std::cout << "                 |                            \n";
     std::cout << "              .-\"^\"-.                       \n";
@@ -91,7 +107,8 @@ void display_misses(int misses) {
 
   }
   else if (misses == 5) {
-
+    
+    std::cout << "\n";
     std::cout << "                 .                            \n";
     std::cout << "                 |                            \n";
     std::cout << "              .-\"^\"-.                       \n";
@@ -108,7 +125,8 @@ void display_misses(int misses) {
 
   }
   else if (misses == 6) {
-
+    
+    std::cout << "\n";
     std::cout << "                 .                            \n";
     std::cout << "                 |                            \n";
     std::cout << "              .-\"^\"-.                       \n";
