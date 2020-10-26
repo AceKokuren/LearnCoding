@@ -5,11 +5,13 @@
 
 int main() {
     greet();
-    std::string codeword = "codecademy", answer = "__________";
+    std::string codeword, answer;
     int misses = 0;
     std::vector<char> incorrect;
     bool guess = false;
     char letter;
+    solutions(codeword, answer);
+    std::cout << codeword << " " << answer;
 
     while (misses < 7 && answer != codeword) {
         std::cout << "\nPlease enter your guess: ";
@@ -31,7 +33,7 @@ int main() {
             misses++;
         }
         display_misses(misses);
-        std::cout << "\nIncorrect Guesses = ";
+        std::cout << "\nIncorrect Guesses ";
         display_status(incorrect, answer);
         guess = false;
     }

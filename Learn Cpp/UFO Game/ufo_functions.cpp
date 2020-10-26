@@ -1,8 +1,34 @@
 #include <iostream>
 #include <vector>
+#include <ctime>
 
 // Define functions
+void solutions(std::string codeword, std::string answer) {
+  
+  std::vector<std::string> codewords{"chicken", "abduction", "cheese", "humans"};
+  srand(time(NULL)); 
+  int random = rand() % 2;
+
+  switch (random) {
+    case 0:
+     codeword = codewords[0];
+     for (int i = 0; i < codeword.size(); i++) {
+      answer = "_";
+    }
+     std::cout << codeword << " " << answer << std::endl; 
+     break;
+
+    case 1:
+     codeword = codewords[1];
+     for (int i = 0; i < codeword.size(); i++) {
+      answer = "_";
+    }
+    std::cout << codeword << " " << answer << std::endl; 
+  }
+}
+
 void greet() {
+   
    std::cout << "=====================\n";
    std::cout << "    UFO: The Game\n";
    std::cout << "=====================\n";
@@ -12,19 +38,21 @@ void greet() {
 }
 
 void end_game(std::string codeword, std::string answer) {
+  
   if (answer == codeword) {
     std::cout << "\nCongratulations, you saved the day! Victory!!\n";
   }
   else {
-    std::cout << "\nGame Over!\n" << std::endl; 
+    std::cout << "\nGame Over!\n" << std::endl;
+    std::cout << "The codeword was: " << codeword << "\n" << std::endl; 
   }
 }
 void display_status(std::vector<char> incorrect, std::string answer) {
 
   for (int i = 0; i < incorrect.size(); i++) {
-    std::cout << incorrect[i] << " ";
+    std::cout << incorrect[i] << ", ";
   }
-  std::cout << "Codeword: ";
+  std::cout << "\nCodeword: ";
 
   for (int j = 0; j < answer.length(); j++) {
     std::cout << answer[j] << " ";
