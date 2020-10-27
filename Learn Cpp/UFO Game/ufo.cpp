@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <ctime>
 #include "ufo_functions.hpp"
 
 
@@ -10,7 +11,15 @@ int main() {
     std::vector<char> incorrect;
     bool guess = false;
     char letter;
-    solutions(codeword, answer);
+    
+    std::vector<std::string> codewords{"chicken", "abduction", "cheese", "humans"};
+    srand(time(NULL));
+    int random = rand() % codewords.size();
+    codeword = codewords[random];
+    for (int i = 0; i < codeword.size(); i++) {
+        answer += "_";
+    }
+
     std::cout << codeword << " " << answer;
 
     while (misses < 7 && answer != codeword) {

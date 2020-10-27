@@ -3,30 +3,6 @@
 #include <ctime>
 
 // Define functions
-void solutions(std::string codeword, std::string answer) {
-  
-  std::vector<std::string> codewords{"chicken", "abduction", "cheese", "humans"};
-  srand(time(NULL)); 
-  int random = rand() % 2;
-
-  switch (random) {
-    case 0:
-     codeword = codewords[0];
-     for (int i = 0; i < codeword.size(); i++) {
-      answer = "_";
-    }
-     std::cout << codeword << " " << answer << std::endl; 
-     break;
-
-    case 1:
-     codeword = codewords[1];
-     for (int i = 0; i < codeword.size(); i++) {
-      answer = "_";
-    }
-    std::cout << codeword << " " << answer << std::endl; 
-  }
-}
-
 void greet() {
    
    std::cout << "=====================\n";
