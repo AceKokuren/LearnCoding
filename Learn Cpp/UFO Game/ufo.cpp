@@ -11,7 +11,8 @@ int main() {
     std::vector<char> incorrect;
     bool guess = false;
     char letter;
-    
+
+    // Creates a vector of random solutions, and creates _'s in answer = to codeword length
     std::vector<std::string> codewords{"chicken", "abduction", "cheese", "humans"};
     srand(time(NULL));
     int random = rand() % codewords.size();
@@ -19,7 +20,7 @@ int main() {
     for (int i = 0; i < codeword.size(); i++) {
         answer += "_";
     }
-
+    // Using to confirm a random choice and that _'s = to codeword
     std::cout << codeword << " " << answer;
 
     while (misses < 7 && answer != codeword) {
