@@ -12,17 +12,6 @@ void greet() {
    std::cout << "abduction by guessing the letters\n";
    std::cout << "in the codeword!" << std::endl;  
 }
-
-void end_game(std::string codeword, std::string answer) {
-  
-  if (answer == codeword) {
-    std::cout << "\nCongratulations, you saved the day! Victory!!\n";
-  }
-  else {
-    std::cout << "\nGame Over!\n" << std::endl;
-    std::cout << "The codeword was: " << codeword << "\n" << std::endl; 
-  }
-}
 void display_status(std::vector<char> incorrect, std::string answer) {
 
   for (int i = 0; i < incorrect.size(); i++) {
@@ -35,7 +24,16 @@ void display_status(std::vector<char> incorrect, std::string answer) {
   }
   std::cout << "\n";
 }
-
+void end_game(std::string codeword, std::string answer) {
+  
+  if (answer == codeword) {
+    std::cout << "\nCongratulations, you saved the day! Victory!!\n";
+  }
+  else {
+    std::cout << "\nGame Over!\n" << std::endl;
+    std::cout << "The codeword was: " << codeword << "\n" << std::endl; 
+  }
+}
 void display_misses(int misses) {
 
   if (misses == 0 || misses == 1) {
