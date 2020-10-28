@@ -42,7 +42,7 @@ int main() {
              misses++;
             }
          display_misses(misses);
-         std::cout << "\nIncorrect Guesses ";
+         std::cout << "\nIncorrect Guesses: ";
          display_status(incorrect, answer);
          guess = false;
         }
