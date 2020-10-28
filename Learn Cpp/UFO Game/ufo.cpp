@@ -26,21 +26,17 @@ int main() {
      codeword = codewords[random];
      for (int i = 0; i < codeword.size(); i++) {
          answer += "_";
-        }
-     // Using to confirm a random choice and that _'s = to codeword
-     std::cout << codeword << " " << answer;
- 
-    
-        while (misses < 7 && answer != codeword) {
+        } 
+     while (misses < 7 && answer != codeword) {
          std::cout << "\nPlease enter your guess: ";
          std::cin >> letter;
          
-          for (int i = 0; i < codeword.length(); i++) {
+         for (int i = 0; i < codeword.length(); i++) {
             if (letter == codeword[i]) {
                 answer[i] = letter;
                 guess = true;
-             }
-            }   
+            }
+          }   
           if (guess) {
              std::cout << "Correct, you are one letter closer to cracking the codeword\n";
              std::cout << "and saving the day!\n";
@@ -57,7 +53,7 @@ int main() {
         }
 
      end_game (codeword, answer);
-     std::cout << "Do you want to play again?\n" << "Y/N\n\n";
+     std::cout << "Do you want to play again?\n" << "y/n\n\n";
      std::cin >> yes_no;
      if (yes_no == "y") {
          play_again = true;
