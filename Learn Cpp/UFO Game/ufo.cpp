@@ -8,6 +8,7 @@ int main() {
     
     greet();
     bool play_again = true;
+
     while (play_again) {
 
      std::string codeword, answer;
@@ -15,18 +16,12 @@ int main() {
      std::vector<char> incorrect;
      bool guess = false;
      char letter;
-    
      std::string yes_no;
     
-     // Creates a vector of random solutions, and creates _'s in answer = to codeword length
-     std::vector<std::string> codewords{"chicken", "abduction", "cheese", "humans"};
-     srand(time(NULL));
-     int random = rand() % codewords.size();
-     codeword = "";
-     codeword = codewords[random];
-     for (int i = 0; i < codeword.size(); i++) {
-         answer += "_";
-        } 
+     std::vector <std::string> gameval = solutions();
+     codeword = gameval[0];
+     answer = gameval[1];
+
      while (misses < 7 && answer != codeword) {
          std::cout << "\nPlease enter your guess: ";
          std::cin >> letter;

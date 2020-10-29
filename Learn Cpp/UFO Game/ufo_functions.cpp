@@ -12,6 +12,18 @@ void greet() {
    std::cout << "abduction by guessing the letters\n";
    std::cout << "in the codeword!" << std::endl;  
 }
+std::vector<std::string> solutions() {
+  std::string codeword, answer;
+  std::vector<std::string> codewords{"chicken", "abduction", "cheese", "humans"};
+  srand(time(NULL));
+  int random = rand() % codewords.size();
+  codeword = codewords[random];
+  for (int i = 0; i < codeword.size(); i++) {
+    answer += "_";
+  }
+  std::vector<std::string> gameval {codeword, answer};
+  return gameval;
+}
 void display_status(std::vector<char> incorrect, std::string answer) {
 
   for (int i = 0; i < incorrect.size(); i++) {
