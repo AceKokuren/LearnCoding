@@ -1,0 +1,2 @@
+void board();
+void intro();
