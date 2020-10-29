@@ -5,5 +5,5 @@
 int main () 
 {
     intro();
-    board(); 
+    
 }

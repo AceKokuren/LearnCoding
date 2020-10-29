@@ -1,2 +1,1 @@
-void board();
 void intro();
