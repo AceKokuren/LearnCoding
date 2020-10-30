@@ -7,6 +7,5 @@ int main ()
     intro();
     board();
     player_turn();
-    board();
     win();    
 }

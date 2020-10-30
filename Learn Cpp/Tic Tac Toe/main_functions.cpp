@@ -31,57 +31,64 @@ void board()
 //Win conditions
 bool win() 
 {   
-    bool is_winner;
+    bool is_winner =false;
     //Rows
-    if (position[0] == position[1] && position[1] == position[2])
+    if ((position[0] == position[1]) && (position[1] == position[2]))
     {
         is_winner = true;
     }
-    else if (position[3] == position[4] && position[4] == position[5])
+    else if ((position[3] == position[4]) && (position[4] == position[5]))
     {
         is_winner = true;
     }
-    else if (position[6] == position[7] && position[7] == position[8])
+    else if ((position[6] == position[7]) && (position[7] == position[8]))
     {
         is_winner = true;
     }
     //Columns
-    else if (position[0] == position[3] && position[3] == position[6])
+    else if ((position[0] == position[3]) && (position[3] == position[6]))
     {
         is_winner = true;
     }
-    else if (position[1] == position[4] && position[5] == position[7])
+    else if ((position[1] == position[4]) && (position[4] == position[7]))
     {
         is_winner = true;
     }
-    else if (position[2] == position[5] && position[6] == position[8])
+    else if ((position[2] == position[5]) && (position[5] == position[8]))
     {
         is_winner = true;
     }
     //Diagonal
-    else if (position[0] == position[4] && position[4] == position[8])
+    else if ((position[0] == position[4]) && (position[4] == position[8]))
     {
         is_winner = true;
     }
-    else if (position[2] == position[4] && position[4] == position[6])
+    else if ((position[2] == position[4]) && (position[4] == position[6]))
     {
         is_winner = true;
-    }
+    }    
     return is_winner;
 }
 void player_turn()
 {
-    int play;
-    std::cout << "player " << player << "'s turn.\n";
-    std::cout << "Please enter a number between 1 and 9: ";
-    std::cin >> play;
+    while (!win())
+    {
+        int play;
+        std::cout << "player " << player << "'s turn.\n";
+        std::cout << "Please enter a number between 1 and 9: ";
+        std::cin >> play;
     
-    if (player = 1)
-    {
-        position[play-1] = "X";
-    }
-    else
-    {
-       position[play-1] = "O";
-    }
+        if (player == 1)
+        {
+            position[play-1] = "X";
+            board();
+            player++;
+        }
+        else if (player == 2)
+        {
+            position[play-1] = "O";
+            board();
+            player--;
+        }
+    }   
 }
