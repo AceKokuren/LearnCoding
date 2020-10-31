@@ -74,7 +74,7 @@ void player_turn()
     while (!win())
     {
         int play;
-        std::cout << "player " << player << "'s turn.\n";
+        std::cout << "Player " << player << "'s turn.\n";
         std::cout << "Please enter a number between 1 and 9: ";
         std::cin >> play;
     
@@ -82,13 +82,32 @@ void player_turn()
         {
             position[play-1] = "X";
             board();
-            player++;
         }
         else if (player == 2)
         {
             position[play-1] = "O";
             board();
-            player--;
         }
-    }   
+        end_game();
+        change_player();
+    }
+}
+void end_game()
+{
+    if (win())
+    {
+        std::cout << "Congratulations Player " << player << "!" << std::endl;
+        std::cout << "You win!" << std::endl;
+    }
+}
+void change_player()
+{
+    if (player == 1)
+    {
+        player++;
+    }
+    else
+    {
+        player--;
+    }
 }
