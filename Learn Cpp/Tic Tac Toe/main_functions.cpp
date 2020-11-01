@@ -4,6 +4,7 @@
 
 int player = 1;
 std::vector<std::string> position {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
+std::vector<std::string> const_position {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
 
 void intro() 
 {
@@ -110,4 +111,9 @@ void change_player()
     {
         player--;
     }
+}
+void reset() 
+{
+    position = const_position;
+    player = 1;
 }
