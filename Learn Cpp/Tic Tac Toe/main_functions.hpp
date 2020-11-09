@@ -6,3 +6,4 @@ void end_game();
 void player_turn();
 void change_player();
 void reset();
+bool tie();

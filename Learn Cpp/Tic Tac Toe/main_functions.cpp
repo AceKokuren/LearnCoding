@@ -32,7 +32,7 @@ void board()
 //Win conditions
 bool win() 
 {   
-    bool is_winner =false;
+    bool is_winner = false;
     //Rows
     if ((position[0] == position[1]) && (position[1] == position[2]))
     {
@@ -72,7 +72,7 @@ bool win()
 }
 void player_turn()
 {
-    while (!win())
+    while (!win() && !tie())
     {
         int play;
         std::cout << "Player " << player << "'s turn.\n";
@@ -95,10 +95,14 @@ void player_turn()
 }
 void end_game()
 {
-    if (win())
+    if (win() && !tie())
     {
         std::cout << "Congratulations Player " << player << "!" << std::endl;
         std::cout << "You win!" << std::endl;
+    }
+    else if (tie() && !win())
+    {
+        std::cout << "There is no winner, tie!" << std::endl;
     }
 }
 void change_player()
@@ -116,4 +120,20 @@ void reset()
 {
     position = const_position;
     player = 1;
+}
+bool tie()
+{
+    bool draw = false;
+    for (int i = 0; i < position.size(); i++)
+    {
+        if (position[i] != "X" && position[i] != "O")
+        {
+            draw = false;
+        }
+        else 
+        {
+            draw = true;
+        }
+    }
+    return draw;
 }
