@@ -95,12 +95,12 @@ void player_turn()
 }
 void end_game()
 {
-    if (win() && !tie())
+    if (win())
     {
         std::cout << "Congratulations Player " << player << "!" << std::endl;
         std::cout << "You win!" << std::endl;
     }
-    else if (tie() && !win())
+    else if (tie())
     {
         std::cout << "There is no winner, tie!" << std::endl;
     }
@@ -123,16 +123,12 @@ void reset()
 }
 bool tie()
 {
-    bool draw = false;
+    bool draw = true;
     for (int i = 0; i < position.size(); i++)
     {
         if (position[i] != "X" && position[i] != "O")
         {
             draw = false;
-        }
-        else 
-        {
-            draw = true;
         }
     }
     return draw;
