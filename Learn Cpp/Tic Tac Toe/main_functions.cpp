@@ -78,7 +78,13 @@ void player_turn()
         std::cout << "Player " << player << "'s turn.\n";
         std::cout << "Please enter a number between 1 and 9: ";
         std::cin >> play;
-    
+
+        while (position[play-1] == "X" || position[play-1] == "O")
+        {
+            std::cout << "There is already something there, pick a different square: ";
+            std::cin >> play;
+        }
+
         if (player == 1)
         {
             position[play-1] = "X";
