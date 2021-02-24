@@ -6,6 +6,13 @@ To name a file when compiling, use the -o variable
 
 To declare a string variable, prefix with "std::string"
 
+Variables: 
+int - Handles whole numbers
+double - Handles floating point numbers, (decimals)
+char - Handles individual letters/characters
+string - Handles sequence of characters
+bool - True or Fals values
+
 To get a full sentence from an input, use:
 "getline (cin, <variable_name>)"
 
