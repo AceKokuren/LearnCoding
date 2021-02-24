@@ -1,6 +1,9 @@
 My big brain for C++
 All notes and issues will be added here
 
+To name a file when compiling, use the -o variable 
+"g++ hello.cpp -o hello" (Creates hello.exe)
+
 To declare a string variable, prefix with "std::string"
 
 To get a full sentence from an input, use:
