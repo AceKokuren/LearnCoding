@@ -1,3 +1,12 @@
+My brain for GitBash Command Line
+
+touch- create new file
+cp- copy file
+rm - remove file
+rm -rf - remove directory and all files inside 
+* - wildcard, selects group of files i.e: .txt/.cpp etc.
+mv- move files/rename folders
+
 This document will be my brain! 
 Any issues I find, I will place here along with the workaround.
 
