@@ -6,7 +6,6 @@ int main() {
      
     if (((i % 3) == 0) && ((i % 5) == 0)) {
       std::cout << "FizzBuzz\n";
-      i++;
    } 
    else if ((i % 3) == 0) {
        std::cout << "Fizz\n";
