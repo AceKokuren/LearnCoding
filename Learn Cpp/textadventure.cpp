@@ -35,7 +35,7 @@ int main() {
     case 3:
     std::cout << "'You will be rewarded with 100 Gold pieces, and will always be welcome in my court!'\n";
     std::cout << "Do you accept?\n\n";
-    std::cout << "Y/N";
+    std::cout << "Y/N ";
     std::string yn;
     std::cin >> yn;
     //Another loop to wait for a valid input
@@ -60,19 +60,7 @@ int main() {
   
   std::string fork;
   std::cin >> fork;
-  //int tries = 1;
-
-  /*while (fork != "right" && fork != "left" && fork != "Right" && fork != "Left" && tries < 5) {
-    std::cout << "\nPlease enter left or right only\n";
-    std::cin >> fork;
-	tries ++;
-  }
-  if (fork == "Left" || fork == "left") {
-    std::cout << "You start heading down the main road!\n";
-  }
-  else if (fork == "Right" || fork == "right") {
-    std::cout << "You go right, down the forest path!\n";
-  }*/
+ 
 //Allows user to input invalid option 5 times
   for (int i  = 0; i < 5; i++) {
     //Left branch of the fork
