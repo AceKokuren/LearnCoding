@@ -39,3 +39,4 @@ Use library vector:
 #include <vector>
 std::vector <data_type> <<vector_name>> = {<stored_values>}
 Use .push_back(); to add data to the vecor, (ensure data is the correct type for the vector).
+When using a char vector, use '' as opposed to "" - Used for strings.
