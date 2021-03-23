@@ -6,6 +6,9 @@ To name a file when compiling, use the -o variable
 
 To declare a string variable, prefix with "std::string"
 
+To get black user input use:
+"std::cin.ignore()" (e.g get user to press enter before progressing)
+
 Variables: 
 int - Handles whole numbers
 double - Handles floating point numbers, (decimals)
