@@ -1,4 +1,3 @@
-#include <iostream>
 #include <vector>
 
 class Profile {
@@ -8,5 +7,5 @@ class Profile {
     std::vector <std::string> hobbies;
   
     public:
-        Profile(int new_age, std::string new_name, std::string new_city, std::string new_country, std::string new_pronoun = "They/Them");
+    Profile(int new_age, std::string new_name, std::string new_city, std::string new_country, std::string new_pronoun = "They/Them");
 };
