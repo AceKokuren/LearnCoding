@@ -1,8 +1,12 @@
 #include <iostream>
 #include <vector>
-#include "profile.hpP"
 
 class Profile {
+    
+    int age;
+    std::string name, city, country, pronoun;
+    std::vector <std::string> hobbies;
   
-  public:
+    public:
+        Profile(int new_age, std::string new_name, std::string new_city, std::string new_country, std::string new_pronoun = "They/Them");
 };
