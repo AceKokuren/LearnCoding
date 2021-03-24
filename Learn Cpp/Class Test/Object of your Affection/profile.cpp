@@ -15,7 +15,7 @@ std::string Profile::view_profile() {
         bio += hobbies[i] += ", ";
         }
         else if (i < hobbies.size()) {
-            bio += hobbies[i] += ".";
+            bio += hobbies[i] += ".\n";
         }
     }
     return bio;
