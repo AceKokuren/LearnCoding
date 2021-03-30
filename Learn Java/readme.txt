@@ -259,3 +259,16 @@ STRING
  toUpperCase Return the string in Upper case
  toLowercase Returns the string in Lower case
  Trim returns copy of string with leading and trailing whitespace
+______________________________________________________
+
+Data Types: 
+  Number - Any number, including Decimals,
+  String - A combination of characters surrounded by ' ' or " ".
+  Boolean - True or False Data,
+  Null - Intentional absence of data,
+  Undefined - Also used as an intentional absence of data but has a different use to Null,
+  Symbol - Unique identifiers, useful in more complex coding,
+  Object - Collections of related data.
+  ______________________________________________________
+
+  
