@@ -1,5 +1,5 @@
 const getUserChoice = userInput => {
-    userInput.toLowerCase();
+    userInput = userInput.toLowerCase();
     if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') {
     return userInput;
     }
@@ -24,7 +24,7 @@ const getUserChoice = userInput => {
      if (userChoice === computerChoice) {
        return 'It\'s a tie!';
      }
-     if (userChoice === 'rock') {
+     else if (userChoice === 'rock') {
        if (computerChoice === 'scissors') {
          return 'Rock crushes scissors, you win!';
        }
@@ -32,7 +32,7 @@ const getUserChoice = userInput => {
          return 'Paper covers rock, you lose!';
        }
      }
-     if (userChoice === 'paper') {
+     else if (userChoice === 'paper') {
        if (computerChoice === 'rock') {
          return 'Paper covers rock, you win!';
        }
@@ -40,7 +40,7 @@ const getUserChoice = userInput => {
          return 'Scissors cuts paper, you lose!';
        }
      }
-     if (userChoice === 'scissors') {
+     else if (userChoice === 'scissors') {
        if (computerChoice === 'paper') {
          return 'Scissors cuts paper, you win!';
        }
@@ -51,10 +51,10 @@ const getUserChoice = userInput => {
    }
    
    function playGame() {
-        const userChoice = getUserChoice('rock');
+        const userChoice = getUserChoice('ROCK');
         const computerChoice = getComputerChoice();
         console.log('You threw ' + userChoice);
         console.log('Computer threw ' + computerChoice);
-        isWinner(userChoice, computerChoice);
+        console.log(isWinner(userChoice, computerChoice));
       }
-     console.log(playGame());
+playGame();
