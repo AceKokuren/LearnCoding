@@ -271,4 +271,40 @@ Data Types:
   Object - Collections of related data.
   ______________________________________________________
 
+Objects:
+  To create Object literals: let obj = {};
+  The curly braces denote that it is an Object literal
+
+  An Object stores unordered data in Key Value pairs.
+  A key points to the location in the memory that holds a value.
+  Can be any data type in the language.
+
+  Creating Object literal pairs: 
+  keyName: propertyName,
+
+  Key value pairs in an Object are separated by commas.
+  If there are no special characters in the key name or property, we can omit quotation marks.
+
+  Accessing a property using dot notation:
+  obj.propertyName;
+
+  This will access the property in the called Object.
+  If the property doesn't exist in the Object, undefined will be returned.
+
+  Accessing a property using bracket [] notation:
+  obj['Property Name'];
+
+  We use bracket notation when accessing keys that have contain, spaces or special characters.
+  It's also useful to select keys of an Object, which is especially helpful when working with functions:
+
+  let spaceship = {
+  'Fuel Type': 'Turbo Fuel',
+  'Active Duty': true,
+  homePlanet: 'Earth',
+  numCrew: 5
+};
+  let returnAnyProp = (objectName, propName) => objectName[propName];
+  returnAnyProp(spaceship, 'homePlanet'); // Returns 'Earth'
+
   
+  ______________________________________________________
