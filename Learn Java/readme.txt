@@ -306,5 +306,47 @@ Objects:
   let returnAnyProp = (objectName, propName) => objectName[propName];
   returnAnyProp(spaceship, 'homePlanet'); // Returns 'Earth'
 
+  Objects are mutable, allowing us to update them after they have been created.
+  You can use dot or bracket notation for this, using the assignment operator = to add new key value pairs.
+
+  obj['Property Name'] = value;
+      or
+  obj.propertyName = value;
+
+  If the property already exists, the value will be changed to the new value.
+  If the property  does not exist, then a new property with that value will be created in the Object.
+
+  When an Object is declared with const, we can't reassign the Object, but we can still mutate it, (add or change properties).
+  To remove a property, we can append the delete operator to the property:
+
+  delete obj.propertyName;
+      or
+  delete obj['Property Name'];
+
+  When the data stored in an Object is a function, it is called a method.
+  A property is what an Object has, a method is what an Object does.
+
+  To create a method:
+  const objName = {
+    methodName () {},
+  };
+
+  Remember to use commas to separate properties and methods in an Object.
+
+Nested Objects:
+  An Object might have another Object as a property, which may have a property with an array of Objects
+  Creating Nested Objects:
+
+  const objName = {
+    nestedObjName: {
+
+    },
+    nestedObjName2 = {
+
+    },
+  };
+
+  Here we have 2 empty nested Objects.
+
   
   ______________________________________________________
