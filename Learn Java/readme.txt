@@ -348,5 +348,9 @@ Nested Objects:
 
   Here we have 2 empty nested Objects.
 
-  
+  The for...in loop will execute a given block of code for each property in an Object:
+
+  for (let variableName in obj) {}
   ______________________________________________________
+
+  
