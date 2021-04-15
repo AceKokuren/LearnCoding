@@ -84,10 +84,10 @@ JDK Major components -
 
 ____________________________________________________________
 
-Java source code is contain in Java classes,
-Java Classes compiled in Byte code
-Byte code is then ran by the JVM
-This allows Java Source code to be cross compatible
+  Java source code is contain in Java classes,
+  Java Classes compiled in Byte code
+  Byte code is then ran by the JVM
+  This allows Java Source code to be cross compatible
 
 ___________________________________________ 
 
@@ -100,14 +100,14 @@ JVM Responsibilities
 __________________________________________
   Java is dynamic
 
-Bava bytecode _:> puts bytecode in memory _> Java Verifier
+  Bava bytecode _:> puts bytecode in memory _> Java Verifier
 
 
-Garbage collection - sorts memory managment
+  Garbage collection - sorts memory managment
 
-Java- Automatically generates documentation
+  Java- Automatically generates documentation
  
-JavaDOC generates an html based on the comments made in the code.
+  JavaDOC generates an html based on the comments made in the code.
 
 
 _________________________________________________________
@@ -121,13 +121,11 @@ Javadoc
 __________________________________________________________
 
 Using the JDK 
- Java development kit provides development enviroment 
-
-
-Java packages are namespaces for classes
-Java class libaries (JCL) provide a set of publically accessible resources
-Java ARchives are a standardized packaging format
-Java modules are a newer packaging format that are more powerful than JAR files
+  Java development kit provides development enviroment 
+  Java packages are namespaces for classes
+  Java class libaries (JCL) provide a set of publically accessible resources
+  Java ARchives are a standardized packaging format
+  Java modules are a newer packaging format that are more powerful than JAR files
 
 _____________________________________________________________
 
@@ -137,8 +135,6 @@ PATH - Should include JAVA_HOME \bin
 
 CLASSPATH - This indicates locations that might be loaded during execution.
  These are classes that are not part of the the Java platform.
-
-
 ____________________________________________________
 
 java applications conform to basic rules
@@ -210,7 +206,6 @@ _____________________________________________________
 Field types
  Primative 
  Object references
-
 ____________________________________________________
 
 Return types
@@ -221,20 +216,19 @@ Return types
 _____________________________________________________
 
 System.out.println(""); prints to debug console
-
 ______________________________________________________
 
 X += Y                            X = X + Y
 X -= y                            X = X - Y
 X++, ++X                          X = X + 1
 X--, --X                          x = X - 1
- 
 ______________________________________________________
-
-&& - AND Statement
- 
-|| OR Statement
-
+Comparison Operators
+  && - AND Statement
+  || OR Statement
+  != Not Equal to 
+  == Value is equal to 
+  === Strict Equals - checks value and data type
 _______________________________________________________
 
 Complex Language statments for looping,
@@ -242,7 +236,7 @@ Complex Language statments for looping,
  For
  while/do
  Switch
- 
+
 Comparison Operators always return boolean
 
 ______________________________________________________
@@ -302,7 +296,7 @@ Objects:
   'Active Duty': true,
   homePlanet: 'Earth',
   numCrew: 5
-};
+  };
   let returnAnyProp = (objectName, propName) => objectName[propName];
   returnAnyProp(spaceship, 'homePlanet'); // Returns 'Earth'
 
@@ -332,6 +326,7 @@ Objects:
   };
 
   Remember to use commas to separate properties and methods in an Object.
+______________________________________________________
 
 Nested Objects:
   An Object might have another Object as a property, which may have a property with an array of Objects
@@ -353,4 +348,36 @@ Nested Objects:
   for (let variableName in obj) {}
   ______________________________________________________
 
+Advanced Objects:
+  this keyword: 
+    When accessing properties inside a method in an Object, we don't automatically have access to all the properties in the Object.
+    this comes in use to reference the calling Object, providing access to the object's properties.
   
+  Privacy:
+    JavaScript does not contain the ability to prevent certain properties from being mutated.
+    To get around this, there are certain naming conventions to indicate that a piece of code should not be edited directly.
+    One such way is to use an _underscore before the property's name:
+
+    _propertyName
+
+    This indicates that the property should not be altered.
+
+    Getters:
+      Getters are methods used to get and return internal properties of an Object.
+      To create a getter:
+
+        const objName = {
+          ...
+          get methodName() {
+            function;
+          }
+        };
+
+      Getters can perform an action on the data when getting a property.
+      Can return different values using conditionals.
+      Can access the properties of the calling object using this.
+      functionality of code is easier for other devs to understand.
+
+      Properties cannot share the same name as the getter/setter function.
+      A workaround is to use the _underscore at the beginng of the property.
+      
