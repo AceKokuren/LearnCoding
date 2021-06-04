@@ -381,3 +381,6 @@ Advanced Objects:
       Properties cannot share the same name as the getter/setter function.
       A workaround is to use the _underscore at the beginng of the property.
       
+    Setters:
+      Setter methods reassign values of existing properties within an object:
+      
