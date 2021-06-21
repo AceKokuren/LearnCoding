@@ -37,17 +37,3 @@ const userChoice = userInput => {
   };
   
   console.log(determineWinner(userChoice('rock'), getComputerChoice));
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
