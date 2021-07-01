@@ -4,3 +4,21 @@ let currentRoundNumber = 1;
 
 // Write your code below:
 const generateTarget = () => Math.floor(Math.random() * 10);
+
+const compareGuesses = (userGuess, computerGuess, targetNumber) => {
+    
+    let userDiff = Math.abs(userGuess - targetNumber);
+    let computerDiff = Math.abs(computerGuess - targetNumber);
+
+    console.log(`${userDiff} ${computerDiff}`)
+    if (computerDiff === userDiff) {
+        return true;
+    }
+    else if (userDiff < computerDiff) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+console.log(compareGuesses(4, 3, 1));
