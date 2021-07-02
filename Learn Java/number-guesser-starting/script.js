@@ -21,4 +21,13 @@ const compareGuesses = (userGuess, computerGuess, targetNumber) => {
         return false;
     }
 }
+const updateScore = winner => {
+    if (winner) {
+        humanScore++;
+    }
+    else {
+        computerScore++;
+    }
+}
+
 console.log(compareGuesses(4, 3, 1));
