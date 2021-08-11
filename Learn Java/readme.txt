@@ -288,7 +288,7 @@ Objects:
   Accessing a property using bracket [] notation:
   obj['Property Name'];
 
-  We use bracket notation when accessing keys that have contain, spaces or special characters.
+  We use bracket notation when accessing keys that contain, spaces or special characters.
   It's also useful to select keys of an Object, which is especially helpful when working with functions:
 
   let spaceship = {
