@@ -39,4 +39,4 @@ function determineWinner(userChoice, computerChoice) {
   } 
 };
 
-determineWinner(getUserChoice('rock'), getComputerChoice());
+determineWinner(getUserChoice('paper'), getComputerChoice());
