@@ -5,22 +5,22 @@ const menu = {
       desserts: []
     },
     set appetizers(appetizerIn) {
-      this._courses.appetizers = appetizerIn;
+      
     },
     get appetizers() {
-        return this.appetizers;
+        return this._courses.appetizers;
     },
     set mains(mainsIn) {
   
     },
     get mains() {
-  
+      return this._courses.mains;
     },
     set desserts(dessertsIn) {
   
     },
     get desserts() {
-  
+      return this._courses.desserts;
     },
     get courses() {
       return {
@@ -36,6 +36,12 @@ const menu = {
       };
       return this._courses[courseName].push(dish);
     }
+    /*getRandomDishFromCourse(courseName) {
+
+    }*/
   };
   
-menu.addDishToCourse('main', 'Fish', 7.69);
+  menu.addDishToCourse('mains', 'fish', 7.69);
+  //menu.mains = 'fish';
+  console.log(menu.mains);
+  console.log(menu);
