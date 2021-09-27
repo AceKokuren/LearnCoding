@@ -378,9 +378,48 @@ Advanced Objects:
       Can access the properties of the calling object using this.
       functionality of code is easier for other devs to understand.
 
-      Properties cannot share the same name as the getter/setter function.
+      Properties cannot share the same name as the getter/setter function, (creates an infinte call stack error).
       A workaround is to use the _underscore at the beginng of the property.
       
     Setters:
-      Setter methods reassign values of existing properties within an object:
+      Setter methods reassign values of existing properties within an object.
+      Setters require at least one parameter.
+      To create a setter: 
+
+        const objName = {
+          ...
+          set methodName(paramName) {
+            function;
+          }
+        };
+      Setters are a way of reassigning data, while simultaneously performing an action with the data.
+      However, the original variable can still be reassigned by directly accessing it and reassigning it.
+
+  Factory Functions:
+    Factory Functions let us create multiple objects quickly with different properties using the same keys.
+    They return an object and can still be re-used to create other objects.
+    To create a Factory Function:
+
+      const factoryFunction = (param1, param2, param3...) => {
+        return {
+          key1: param1,
+          key2: param2,
+          key3: param3
+          ...
+        }
+      };
+    
+    Then simply call the function, adding the parameters required:
       
+      const obj1 = factoryFunction("param1", "param2", "param3"...);
+
+    We can also use property value shorthand to speed up the process:
+
+      const factoryFunction(name, age) => {
+        return {
+          name,
+          age
+        }
+      };
+    This does the same thing as the above example, but is more efficient if more properties are required to be added.
+    
