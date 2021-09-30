@@ -9,3 +9,24 @@ console.log(storyWords.length);
 
 const betterWords = storyWords.filter(word => !unnecessaryWords.includes(word))
 console.log(betterWords.length);
+
+/*const overUsedCount = () => {
+    const countedWords = betterWords.filter(word => overusedWords.includes(word))
+    console.log(countedWords.length);    
+}
+overUsedCount();*/  //Function that logs an array that adds each word that is matched in the overusedWords array
+
+const overUsedCount = () => {
+    let counter = 0;
+    for(let i = 0; i < betterWords.length; i++) {
+        let trueFalse = overusedWords.includes(betterWords[i]) 
+        if (trueFalse === true) {
+            counter++;
+        }
+    }
+    console.log(counter);
+}
+
+
+
+overUsedCount();
