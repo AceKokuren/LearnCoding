@@ -57,6 +57,35 @@ const findInvalidCards = (nestedArr) => {
     return invalidCards;
 }
 
-
-console.log(findInvalidCards(batch));
-console.log(validateCard(valid1));
+const invalidCardIDComp = (nestedArr) => {
+    let companies = [];
+    for (let i = 0; i < nestedArr.length; i++) {
+        switch (nestedArr[i][0]) {
+            case 3 :
+                if (companies.indexOf('American Express') === -1) {
+                    companies.push('American Express');
+                }
+                break;
+            case 4 :
+                if (companies.indexOf('Visa') === -1) {
+                    companies.push('Visa');
+                }
+                break;
+            case 5: 
+                if (companies.indexOf('Mastercard') === -1) {
+                    companies.push('Mastercard');
+                }
+                break;
+            case 6 :
+                if (companies.indexOf('Discover') === -1) {
+                    companies.push('Discover');
+                }
+                break;
+            default :
+                companies.push(`Company Not Found`);
+        }
+    }
+    return companies;
+}
+ 
+console.log(invalidCardIDComp(findInvalidCards(batch)));
