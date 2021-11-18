@@ -26,20 +26,24 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 // Add your functions below:
 const validateCard = (arr) => {
     let newArr = arr.reverse();
+    let sum = 0;
     for (let i = 1; i < newArr.length; i += 2) {
         newArr[i] *= 2;
         if (newArr[i] > 9) {
             newArr[i] -= 9;
         }
     }
-    
-    console.log(newArr)
+    for (let i = 0; i < newArr.length; i++) {
+        sum += newArr[i];
+    }
+    if (sum % 10 === 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
-validateCard(valid1);
-
-
-
-
-
-
+console.log(validateCard(valid1));
+console.log(validateCard(invalid1));
+console.log(validateCard(mystery1));
