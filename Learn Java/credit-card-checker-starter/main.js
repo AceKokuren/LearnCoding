@@ -44,6 +44,11 @@ const validateCard = (arr) => {
     }
 }
 
+const findInvalidCards = (nestedArr) => {
+    let invalidCards = [];
+    
+}
+
 console.log(validateCard(valid1));
 console.log(validateCard(invalid1));
-console.log(validateCard(mystery1));
+console.log(validateCard(mystery2));
