@@ -25,7 +25,10 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 // Add your functions below:
 const validateCard = (arr) => {
-    let newArr = arr.reverse();
+    let newArr = [];
+    for (let i = arr.length - 1; i >= 0; i--) {
+        newArr.push(arr[i]);
+    }
     let sum = 0;
     for (let i = 1; i < newArr.length; i += 2) {
         newArr[i] *= 2;
@@ -46,9 +49,14 @@ const validateCard = (arr) => {
 
 const findInvalidCards = (nestedArr) => {
     let invalidCards = [];
-    
+    for (let i = 0; i < nestedArr.length; i++) {
+        if (!validateCard(nestedArr[i])) {
+            invalidCards.push(nestedArr[i]);
+        }
+    }
+    return invalidCards;
 }
 
+
+console.log(findInvalidCards(batch));
 console.log(validateCard(valid1));
-console.log(validateCard(invalid1));
-console.log(validateCard(mystery2));
