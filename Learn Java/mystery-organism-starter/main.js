@@ -17,6 +17,9 @@ const pAequorFactory = (id, dnaArr) => {
   return {
     id,
     dnaArr,
+    mutate() {
+        
+    }
   }
 };
 
