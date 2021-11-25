@@ -13,10 +13,12 @@ const mockUpStrand = () => {
   return newStrand;
 };
 
+const pAequorFactory = (id, dnaArr) => {
+  return {
+    id,
+    dnaArr,
+  }
+};
 
-
-
-
-
-
-
+const dna1 = pAequorFactory(1, mockUpStrand());
+console.log(dna1);
