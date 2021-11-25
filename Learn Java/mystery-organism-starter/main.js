@@ -18,10 +18,18 @@ const pAequorFactory = (id, dnaArr) => {
     id,
     dnaArr,
     mutate() {
-        
+      let el = Math.floor(Math.random() * 15);
+      let base = returnRandBase();
+      while (dnaArr[el] === base){
+        base = returnRandBase();
+      }
+      dnaArr[el] = base;  
     }
   }
 };
 
 const dna1 = pAequorFactory(1, mockUpStrand());
-console.log(dna1);
+console.log(dna1.dnaArr);
+dna1.mutate();
+dna1.mutate();
+console.log(dna1.dnaArr);
