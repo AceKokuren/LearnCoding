@@ -18,18 +18,30 @@ const pAequorFactory = (id, dnaArr) => {
     id,
     dnaArr,
     mutate() {
-      let el = Math.floor(Math.random() * 15);
+      let el = Math.floor(Math.random() * this.dnaArr.length);
       let base = returnRandBase();
       while (dnaArr[el] === base){
         base = returnRandBase();
       }
-      dnaArr[el] = base;  
+      dnaArr[el] = base;
+      return dnaArr;  
+    },
+    compareDNA(otherOrg) {
+      let counter = 0;
+      for (let i = 0; i < this.dnaArr.length; i++) {
+        if (this.dnaArr[i] === otherOrg.dnaArr[i]) {
+          counter++;
+        }
+      }
+      console.log(counter);
+      const percentage = counter/(this.dnaArr.length / 100)
+      console.log(`Specimen ${this.id} and Specimen ${otherOrg.id} have ${percentage.toFixed(2)}% DNA in common.`);
     }
   }
 };
 
 const dna1 = pAequorFactory(1, mockUpStrand());
+const dna2 = pAequorFactory(2, mockUpStrand());
 console.log(dna1.dnaArr);
-dna1.mutate();
-dna1.mutate();
-console.log(dna1.dnaArr);
+console.log(dna2.dnaArr);
+dna1.compareDNA(dna2);
