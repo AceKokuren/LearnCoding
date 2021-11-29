@@ -36,6 +36,9 @@ const pAequorFactory = (id, dnaArr) => {
       console.log(counter);
       const percentage = counter/(this.dnaArr.length / 100)
       console.log(`Specimen ${this.id} and Specimen ${otherOrg.id} have ${percentage.toFixed(2)}% DNA in common.`);
+    },
+    willLikelySurvive() {
+      
     }
   }
 };
