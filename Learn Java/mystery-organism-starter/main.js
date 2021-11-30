@@ -46,7 +46,10 @@ const pAequorFactory = (id, dnaArr) => {
       }
       percentageOfCAndGStrands = counterCAndG / (this.dnaArr.length / 100);
       return percentageOfCAndGStrands >= 60;
-    }
+    },
+    /*complementDNA() {
+
+    }*/
   }
 };
 
