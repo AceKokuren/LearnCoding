@@ -43,9 +43,11 @@ To delete Local Branch, ensure branch isn't checkoed out, then use:
 To delete remote branch use:
 "git push <remote_name> --delete <branch_name>"
 
-To store changes on the working directory without committing:
+To store tracked file changes on the working directory without committing:
 "git stash"
 To restore changes from the stash:
-"git pop"
+"git stash pop"
 To get rid of stashed changes:
-"git drop"
+"git stash drop"
+To stash untracked files on the working directory without committing:
+"git stash -u"
