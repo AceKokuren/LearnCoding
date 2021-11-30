@@ -4,7 +4,7 @@ const returnRandBase = () => {
   return dnaBases[Math.floor(Math.random() * 4)];
 };
 
-// Returns a random single stand of DNA containing 15 bases
+// Returns a random single strand of DNA containing 15 bases
 const mockUpStrand = () => {
   const newStrand = [];
   for (let i = 0; i < 15; i++) {
@@ -20,11 +20,11 @@ const pAequorFactory = (id, dnaArr) => {
     mutate() {
       let el = Math.floor(Math.random() * this.dnaArr.length);
       let base = returnRandBase();
-      while (dnaArr[el] === base){
+      while (dnaArr[el] === base) {
         base = returnRandBase();
       }
       dnaArr[el] = base;
-      return dnaArr;  
+      return this.dnaArr;  
     },
     compareDNA(otherOrg) {
       let counter = 0;
@@ -50,3 +50,15 @@ const pAequorFactory = (id, dnaArr) => {
   }
 };
 
+idCounter = 1;
+willSurviveSpecimens = [];
+
+while (willSurviveSpecimens.length < 30) {
+  let newOrg = pAequorFactory(idCounter, mockUpStrand());
+  if (newOrg.willLikelySurvive()) {
+    willSurviveSpecimens.push(newOrg);
+  }
+  idCounter++;
+}
+
+console.log(willSurviveSpecimens);
