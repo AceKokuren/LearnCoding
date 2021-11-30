@@ -42,3 +42,10 @@ To delete Local Branch, ensure branch isn't checkoed out, then use:
 "git branch -d <branch_name>" or "git branch -D <branch_name>" to force delete regardless of merge status.
 To delete remote branch use:
 "git push <remote_name> --delete <branch_name>"
+
+To store changes on the working directory without committing:
+"git stash"
+To restore changes from the stash:
+"git pop"
+To get rid of stashed changes:
+"git drop"
