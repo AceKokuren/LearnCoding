@@ -38,13 +38,15 @@ const pAequorFactory = (id, dnaArr) => {
       console.log(`Specimen ${this.id} and Specimen ${otherOrg.id} have ${percentage.toFixed(2)}% DNA in common.`);
     },
     willLikelySurvive() {
-      
+      let counterCAndG = 0;
+      for (let i = 0; i < this.dnaArr.length; i++) {
+        if (this.dnaArr[i] === 'C' || this.dnaArr[i] === 'G') {
+          counterCAndG++;
+        }
+      }
+      percentageOfCAndGStrands = counterCAndG / (this.dnaArr.length / 100);
+      return percentageOfCAndGStrands >= 60;
     }
   }
 };
 
-const dna1 = pAequorFactory(1, mockUpStrand());
-const dna2 = pAequorFactory(2, mockUpStrand());
-console.log(dna1.dnaArr);
-console.log(dna2.dnaArr);
-dna1.compareDNA(dna2);
