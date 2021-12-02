@@ -1,6 +1,6 @@
 # **Mixed Messages**
 
-## **The Aim**
+## **The Aim:**
 ----------
 The aim of this project is to create a random message generator.
 The message will be made up of different quotes to always give an incorrect quote from multiple fandoms.
@@ -8,7 +8,7 @@ The project will utilize JavaScript.
 
 My main approach to this project will be to use 3 or 4 arrays of quotes and random number generators to stitch together a message.
 
-## **Project Plan** 
+## **Project Plan:** 
 
 * Decide on Topic - Topic is Quotes from fictional characters **x**
 * Build Arrays - Create 3 arrays, 1 for characters, 1 for the first half of a quote, 1 for the second half of a quote
