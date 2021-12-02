@@ -5,3 +5,7 @@ const line2 = ['you almost caught Captain Jack Sparrow'];
 const randomElement = (arr) => {
     return Math.floor(Math.random() * arr.length);
 }
+
+const quote = () => {
+    
+}
