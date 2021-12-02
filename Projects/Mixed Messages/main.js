@@ -12,6 +12,6 @@ const quote = () => {
     let part1 = randomElement(line1);
     let part2 = randomElement(line2);
 
-    console.log(`${part1},\n ${part2} \n          -${char}`)
+    console.log(`${part1},\n ${part2} \n    -${char}`)
 }
 quote();
