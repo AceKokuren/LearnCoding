@@ -25,3 +25,8 @@ Created 3 Arrays:
 * Line 2
 
 These will be populated to generate a wrong, random quote from a famous fictional character.
+
+---------------
+Populated each array with 1 element.
+
+---------------
