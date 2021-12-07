@@ -27,8 +27,8 @@ Created 3 Arrays:
 These will be populated to generate a wrong, random quote from a famous fictional character.
 
 ---------------
-Populated each array with 1 element.
+02/12/2021 - Populated each array with 1 element.
 
-Added Sherlock Holmes quote.
+07/12/2021 - Added Sherlock Holmes quote.
 
 ---------------
