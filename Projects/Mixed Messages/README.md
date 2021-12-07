@@ -29,4 +29,6 @@ These will be populated to generate a wrong, random quote from a famous fictiona
 ---------------
 Populated each array with 1 element.
 
+Added Sherlock Holmes quote.
+
 ---------------
