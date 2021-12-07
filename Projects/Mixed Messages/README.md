@@ -11,9 +11,9 @@ My main approach to this project will be to use 3 or 4 arrays of quotes and rand
 ## **Project Plan:** 
 
 * Decide on Topic - Topic is Quotes from fictional characters **x**
-* Build Arrays - Create 3 arrays, 1 for characters, 1 for the first half of a quote, 1 for the second half of a quote
-* Create a random number generator to pick an element from each array
-* Concatenate each element into a full quote
+* Build Arrays - Create 3 arrays, 1 for characters, 1 for the first half of a quote, 1 for the second half of a quote **x**
+* Create a random number generator to pick an element from each array **x**
+* Concatenate each element into a full quote **x**
 * Ensure that a character can never match with the right quote, and that the 2 halves of a quote never match
 * Final Product - Every time the app is run, there will be two halves of a quotes associated with the wrong character.
 
