@@ -19,7 +19,7 @@ jobs:
     # Create a zip file with all files required by the module to add to the release
     - run: zip -r ./app.zip ./Projects/Mixed\ Messages/index.html ./Projects/Mixed\ Messages/main.js ./Projects/Mixed\ Messages/README.md
 
-    -run: mv ./app.zip/Projects/Mixed\ Messages/.* ./app.zip
+    - run: mv ./app.zip/Projects/Mixed\ Messages/.* ./app.zip
     # Create a release for this specific version
     - name: Update Release with Files
       id: create_version_release
