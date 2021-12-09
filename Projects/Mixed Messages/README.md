@@ -1,5 +1,8 @@
 # **Mixed Messages**
 
+## **How to Use:**
+Simply download the .zip folder, then extract the contents, open the folder you just extracted, click the Generate Quote button and off you go.
+
 ## **The Aim:**
 
 The aim of this project is to create a random message generator.<br>
