@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - uses: papeloto/action-zip@v1
 
     # get part of the tag after the `v`
     - name: Extract tag version number
@@ -16,9 +17,10 @@ jobs:
       uses: battila7/get-version-action@v2
 
     # Create a zip file with all files required by the module to add to the release
-    - name: Create Zip File
-      working-directory: ./Projects/Mixed\ Messages
-      run: zip -r ../../app.zip .
+    zip-files:
+      with:
+        files: ./Projects/Mixed\ Messages/.*
+        dest: app.zip
 
     # Create a release for this specific version
     - name: Update Release with Files
