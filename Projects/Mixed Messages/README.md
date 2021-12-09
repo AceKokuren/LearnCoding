@@ -28,6 +28,9 @@ These will be populated to generate a wrong, random quote from a famous fictiona
 
 ---------------
 02/12/2021 - Populated each array with 1 element.<br>
-07/12/2021 - Added Sherlock Holmes quote.
+07/12/2021 - Added Sherlock Holmes quote.<br>
+09/12/2021 - Added functionality to ensure no element matches corresponding element in array<br>
+             Added comments to code<br>
+             Changed randomElement to return a number only for comparison
 
 ---------------
