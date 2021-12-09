@@ -10,12 +10,13 @@ My main approach to this project will be to use 3 or 4 arrays of quotes and rand
 
 ## **Project Plan:** 
 
-* Decide on Topic - Topic is Quotes from fictional characters **x**
-* Build Arrays - Create 3 arrays, 1 for characters, 1 for the first half of a quote, 1 for the second half of a quote **x**
-* Create a random number generator to pick an element from each array **x**
-* Concatenate each element into a full quote **x**
-* Ensure that a character can never match with the right quote, and that the 2 halves of a quote never match
-* Final Product - Every time the app is run, there will be two halves of a quotes associated with the wrong character.
+* Decide on Topic - Topic is Quotes from fictional characters **X**
+* Build Arrays - Create 3 arrays, 1 for characters, 1 for the first half of a quote, 1 for the second half of a quote **X**
+* Create a random number generator to pick an element from each array **X**
+* Concatenate each element into a full quote **X**
+* Ensure that a character can never match with the right quote, and that the 2 halves of a quote never match **X**
+* Final Product - Every time the app is run, there will be two halves of a quotes associated with the wrong character. **X**
+* Add more quotes for more randomness 
 
 ### **Updates:**
 ----------------
