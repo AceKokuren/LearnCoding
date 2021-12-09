@@ -11,28 +11,27 @@ jobs:
     - uses: actions/checkout@v2
     - uses: papeloto/action-zip@v1
 
-    # get part of the tag after the `v`
-    - name: Extract tag version number
-      id: get_version
-      uses: battila7/get-version-action@v2
+    # # get part of the tag after the `v`
+    # - name: Extract tag version number
+    #   id: get_version
+    #   uses: battila7/get-version-action@v2
 
     # Create a zip file with all files required by the module to add to the release
     - name: Create zip file
         steps:
-        - uses: actions/checkout@v2
             run: zip -r ./app.zip index.html main.js README.md
             working-directory: ./Projects/Mixed\ Messages
 
     
     # Create a release for this specific version
-    - name: Update Release with Files
-      id: create_version_release
-      uses: ncipollo/release-action@v1
-      with:
-        allowUpdates: true # Set this to false if you want to prevent updating existing releases
-        name: ${{ github.event.release.name }}
-        draft: false
-        token: ${{ secrets.GITHUB_TOKEN }}
-        artifacts: './app.zip'
-        tag: ${{ github.event.release.tag_name }}
-        body: ${{ github.event.release.body }}
+    # - name: Update Release with Files
+    #   id: create_version_release
+    #   uses: ncipollo/release-action@v1
+    #   with:
+    #     allowUpdates: true # Set this to false if you want to prevent updating existing releases
+    #     name: ${{ github.event.release.name }}
+    #     draft: false
+    #     token: ${{ secrets.GITHUB_TOKEN }}
+    #     artifacts: './app.zip'
+    #     tag: ${{ github.event.release.tag_name }}
+    #     body: ${{ github.event.release.body }} 
