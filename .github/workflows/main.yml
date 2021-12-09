@@ -18,7 +18,7 @@ jobs:
     # Create a zip file with all files required by the module to add to the release
     - name: Create Zip File
       working-directory: ./Projects/Mixed\ Messages
-      run: zip -r ./app.zip .
+      run: zip -r ../../app.zip .
 
     # Create a release for this specific version
     - name: Update Release with Files
