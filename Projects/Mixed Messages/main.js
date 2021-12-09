@@ -4,14 +4,15 @@ const line2 = ['you almost caught, Captain Jack Sparrow', 'however improbable, m
 
 const randomElement = (arr) => {
     let el  =  Math.floor(Math.random() * arr.length);
-    return arr[el];
+    return el;
 }
 
 const quote = () => {
-    let char = randomElement(characters);
-    let part1 = randomElement(line1);
-    let part2 = randomElement(line2);
+    let charEl = randomElement(characters);
+    let part1El = randomElement(line1);
+    let part2El = randomElement(line2);
 
+    //while (char === characters[0] && part1 === line1[0])
     console.log(`${part1},\n ${part2} \n    -${char}`)
 }
 quote();
