@@ -16,7 +16,7 @@ jobs:
       uses: battila7/get-version-action@v2
 
     # Create a zip file with all files required by the module to add to the release
-    - run: zip -r ./app.zip index.html main.js README.md
+    - run: zip -qq -r ./app.zip index.html main.js README.md
       working-directory: Projects/Mixed\Messages
 
     # Create a release for this specific version
