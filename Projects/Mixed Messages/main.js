@@ -1,6 +1,6 @@
-const characters = ['Captain Jack Sparrow.', 'Sherlock Holmes'];
-const line1 = ['This is the day you will always remember as the day', 'When you have eliminated all which is impossible, then whatever remains'];
-const line2 = ['you almost caught, Captain Jack Sparrow', 'however improbable, must be the truth.'];
+const characters = ['Captain Jack Sparrow.', 'Sherlock Holmes', 'Captain Kirk'];
+const line1 = ['This is the day you will always remember as the day', 'When you have eliminated all which is impossible, then whatever remains', 'To boldly go'];
+const line2 = ['you almost caught, Captain Jack Sparrow', 'however improbable, must be the truth.', 'where no man has gone before'];
 
 const randomElement = (arr) => {
     let el  =  Math.floor(Math.random() * arr.length);
