@@ -19,8 +19,12 @@ const quote = () => {
         part1El = randomElement(line1);
         part2El = randomElement(line2);
     }
-    console.log(`${line1[part1El]},\n ${line2[part2El]} \n    -${characters[charEl]}`)
+    return `${line1[part1El]},\n ${line2[part2El]} \n    -${characters[charEl]}`
 }
 
-//Calling function to console
-quote();
+//Code to display code on a webpage
+const quoteButton = document.getElementById('quote');
+const quoteDisplay = document.getElementById('quote-display')
+quoteButton.addEventListener('click', () => {
+    quoteDisplay.innerText = quote();
+})
