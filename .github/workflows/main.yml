@@ -18,8 +18,10 @@ jobs:
 
     # Create a zip file with all files required by the module to add to the release
     - name: Create zip file
-        run: zip -r ./app.zip index.html main.js README.md
-        working-directory: ./Projects/Mixed\ Messages
+        steps:
+        - uses: actions/checkout@v2
+            run: zip -r ./app.zip index.html main.js README.md
+            working-directory: ./Projects/Mixed\ Messages
 
     
     # Create a release for this specific version
