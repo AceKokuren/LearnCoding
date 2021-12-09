@@ -17,7 +17,7 @@ jobs:
       uses: battila7/get-version-action@v2
 
     # Create a zip file with all files required by the module to add to the release
-    - run: zip -r ../../app.zip ./Projects/Mixed\ Messages/index.html ./Projects/Mixed\ Messages/main.js ./Projects/Mixed\ Messages/README.md
+    - run: zip -r ./app.zip ./Projects/Mixed\ Messages/index.html ./Projects/Mixed\ Messages/main.js ./Projects/Mixed\ Messages/README.md
 
     # Create a release for this specific version
     - name: Update Release with Files
@@ -28,6 +28,6 @@ jobs:
         name: ${{ github.event.release.name }}
         draft: false
         token: ${{ secrets.GITHUB_TOKEN }}
-        artifacts: '../../app.zip'
+        artifacts: './app.zip'
         tag: ${{ github.event.release.tag_name }}
         body: ${{ github.event.release.body }}
