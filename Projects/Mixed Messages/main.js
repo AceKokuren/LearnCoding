@@ -1,7 +1,7 @@
 //Arrays to store characters and quotes
-const characters = ['Captain Jack Sparrow.', 'Sherlock Holmes', 'Captain Kirk', 'Malcolm Reynolds', 'Ace Rimmer'];
-const line1 = ['This is the day you will always remember as the day', 'When you have eliminated all which is impossible, then whatever remains', 'To boldly go', 'Next time you want to stab me in the back', 'Smoke me a kipper'];
-const line2 = ['you almost caught, Captain Jack Sparrow.', 'however improbable, must be the truth.', 'where no man has gone before.', 'have the guts to do it to my face.', 'I\'ll be back for breakfeast'];
+const characters = ['Captain Jack Sparrow.', 'Sherlock Holmes', 'Captain Kirk', 'Malcolm Reynolds', 'Ace Rimmer', 'Friedrich W. Nietzsche'];
+const line1 = ['This is the day you will always remember as the day', 'When you have eliminated all which is impossible, then whatever remains', 'To boldly go', 'Next time you want to stab me in the back', 'Smoke me a kipper', 'Beware that, when fighting monsters, you yourself do not become a monster'];
+const line2 = ['you almost caught, Captain Jack Sparrow.', 'however improbable, must be the truth.', 'where no man has gone before.', 'have the guts to do it to my face.', 'I\'ll be back for breakfeast', 'for when you gaze long into the abyss, the abyss gazes also into you.'];
 
 //Function to generate a random number from an array
 const randomElement = (arr) => {
