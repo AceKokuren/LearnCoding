@@ -14,7 +14,7 @@ const quote = () => {
     let part1El = randomElement(line1);
     let part2El = randomElement(line2);
 
-    while (charEl === part1El || part1El === part2El || charEl === part2El) {
+    while (charEl === part1El || charEl === part2El) {
         charEl = randomElement(characters);
         part1El = randomElement(line1);
         part2El = randomElement(line2);
