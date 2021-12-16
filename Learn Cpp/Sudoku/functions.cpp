@@ -14,9 +14,9 @@ std::vector <int> random_number() {
         num = rand() % 10;
         board.push_back(num);
     }
-    for (int i =0; i < board.size(); i++) {
+    /*for (int i =0; i < board.size(); i++) {
         std::cout << 
-    }
+    }*/
     return board;
 }
 
