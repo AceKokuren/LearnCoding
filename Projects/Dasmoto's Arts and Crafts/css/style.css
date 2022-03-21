@@ -1,5 +1,8 @@
+h1, h2, h3, p {
+    font-family: Helvetica;
+}
 h1 {
-    font-family: Arial, Helvetica;
+    background-image: url("../images/image1.webp");
     font-size: 100px;
     font-weight: bold;
     color: khaki;
