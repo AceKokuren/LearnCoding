@@ -26,7 +26,7 @@ const compareGuesses = (human, computer) => {
     return `You chose ${human}, computer chose ${computer}, it's a draw!`;
   }
   else if (human === 'rock' && computer === 'scissors' || human === 'paper' && computer === 'rock' || human === 'scissors' && computer === 'paper') {
-    console.log(`You chose ${human}, Computer chose ${computer}! You win!`);
+    return `You chose ${human}, Computer chose ${computer}! You win!`;
   }
   else if (human === 'rock' && computer === 'paper' || human === 'paper' && computer === 'scissors' || human === 'scissors' && computer === 'rock') {
     return `You chose ${human}, Computer chose ${computer}! You lose!`;
