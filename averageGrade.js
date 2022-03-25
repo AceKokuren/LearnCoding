@@ -1,13 +1,9 @@
 // Write your function here:
-/*const grades = {59: 'F', 69: 'D', 79: 'C', 89: 'B', 100: 'A'};
+const grades = {59: 'F', 69: 'D', 79: 'C', 89: 'B', 100: 'A'};
 
 function checkValidGrade() {
-    for (let i = 0; i < arguments.length; i++) {
-        if (arguments[i] < 0 || arguments[i] > 100) {
-            return false;
-        }
-    }
-    return true;
+    array1 = Array.from(arguments);
+    return array1.every(element => element >= 0 && element <= 100);
 }
 
 function finalGrade(grade1, grade2, grade3) {
@@ -20,10 +16,6 @@ function finalGrade(grade1, grade2, grade3) {
 }
 
 console.log(finalGrade(65, 92, 95)) // Prints 'B'
-console.log(finalGrade(100, 80, 90)) // Prints 'A'*/
-
-const grades = {59: 'F', 69: 'D', 79: 'C', 89: 'B', 100: 'A'};
-
-function finalGrade(grade1, grade2, grade3) {
-    if (grade1 < 0 || grade2 )
-} 
+console.log(finalGrade(100, 80, 90)) // Prints 'A'
+console.log(finalGrade(101, 101, 101));
+console.log(finalGrade(-1, -1, -1));
