@@ -17,5 +17,5 @@ function finalGrade(grade1, grade2, grade3) {
 
 console.log(finalGrade(65, 92, 95)) // Prints 'B'
 console.log(finalGrade(100, 80, 90)) // Prints 'A'
-console.log(finalGrade(101, 101, 101));
-console.log(finalGrade(-1, -1, -1));
+console.log(finalGrade(101, 101, 101)); //Prints 'You have entered an invalid grade.'
+console.log(finalGrade(-1, -1, -1)); //Prints 'You have entered an invalid grade.'
