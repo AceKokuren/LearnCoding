@@ -4,29 +4,17 @@ let currentRoundNumber = 1;
 
 // Write your code below:
 const generateTarget = () => Math.floor(Math.random() * 10);
+const absoluteDistance = (guess, target) => Math.abs(guess - target);
 
 const compareGuesses = (userGuess, computerGuess, targetNumber) => {
-    
-    let userDiff = Math.abs(userGuess - targetNumber);
-    let computerDiff = Math.abs(computerGuess - targetNumber);
-
-    if (computerDiff === userDiff) {
-        return true;
-    }
-    else if (userDiff < computerDiff) {
-        return true;
-    }
-    else {
+    let userDiff = absoluteDistance(userGuess, targetNumber);
+    let computerDiff = absoluteDistance(computerGuess, targetNumber);
+    if (userGuess < 0 || userGuess > 10) {
+        alert("Not a valid number!\nPlease enter a number from 0 to 9!");
         return false;
     }
+    return userDiff <= computerDiff;
 }
 
-const updateScore = winner => {
-    if (winner === 'human') {
-        humanScore++;
-    }
-    else if (winner === 'computer') {
-        computerScore++;
-    }
-}
+const updateScore = winner => winner === 'human' ? humanScore++ : computerScore++;
 const advanceRound = () => currentRoundNumber++;
