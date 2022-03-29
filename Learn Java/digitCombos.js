@@ -13,4 +13,4 @@ function digitCombos(numOfDigits) {
 }
 
 console.log(digitCombos(4)); //Prints Array of all possible 4 digit numbers in random order
-console.log(digitCombos(2).sort()); 
+console.log(digitCombos(2).sort()); //Prints Array of all possible 2 digit numbers in order
