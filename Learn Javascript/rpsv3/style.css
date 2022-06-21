@@ -1,0 +1,37 @@
+body {
+    background-color: #191933;
+    font-family: sans-serif;
+    text-align: center;
+    color: #dbe9e9;
+}
+
+a:hover {
+    color: #e7c3be;
+}
+
+a {
+    color: rgb(136, 201, 201);
+}
+
+button {
+    border: solid 1px rgb(255, 255, 255);
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(179, 174, 255);
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 20px;
+    border: solid 2px rgb(104, 155, 197);
+}
+
+.score-table {
+    margin: auto;
+}
